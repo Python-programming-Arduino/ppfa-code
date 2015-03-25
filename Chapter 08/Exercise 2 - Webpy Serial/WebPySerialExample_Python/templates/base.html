@@ -1,0 +1,9 @@
+$def with(form, humidity)
+
+<h2>Arduino serial interfacing with Web.py</h2>
+<h3>Use following form to manually enter temperature value to obtain relative humidity. Default temperature is 25 C.</h3>
+<form method="POST">
+    $:form.render()
+</form>
+<h3>Relative Humidity is:</h3>
+<p name="temp">$humidity  %</p>

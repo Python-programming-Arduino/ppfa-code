@@ -1,0 +1,9 @@
+$def with(form, sensor, value)
+
+<h2>Arduino GET & POST request to Web.py</h2>
+<h3>Select sensor to send GET request to Arduino.</h3>
+<form method="POST">
+    $:form.render()
+</form>
+<h3>$sensor value is:</h3>
+<p name="temp">$value</p>

@@ -1,0 +1,10 @@
+$def with(form, temperature, humidity)
+
+<h2>Receiving and updating data to Xively</h2>
+        <p>Enter current temperature value, which effects the Humidity.</p>
+<form method="POST">
+    $:form.render()
+</form>
+        <p>Manually entered temperature value is $temperature. </p>
+        <p></p>
+<h3> Current humidity value from raw humidity data: $humidity %</h3>

@@ -1,0 +1,9 @@
+$def with(form, humidity, motion)
+
+<h2>Get sensor information from mosquitto.</h2>
+<p>Refresh humidity and motion values by pressing button.</p>
+    <form method="POST">
+        $:form.render()
+    </form>
+    <p>Humidity : $humidity</p>
+    <p>Motion : $motion</p>

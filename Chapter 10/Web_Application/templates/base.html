@@ -1,0 +1,11 @@
+$def with(form, status, temperature, humidity, light, motion)
+
+<h2>Remote Home Monitoring System</h2>
+    <h3>Status: $status</h3>
+        <p>Temperature : $temperature </p>
+        <p>Humidity : $humidity</p>
+        <p>Light : $light</p>
+        <p>Motion : $motion</p>
+        <form method="POST">
+            $:form.render()
+        </form>
